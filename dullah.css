@@ -1,0 +1,72 @@
+*    {padding: 0;
+      margin: 0;}
+       
+nav span{font-size:40px;
+           color: ;}
+           
+nav  {display:flex;
+       justify-content:space-between;
+       align-items: center;
+       padding: 20px 15px;
+       background: #0f172a;
+       color: white;
+       position:sticky;
+       top:0;}
+       
+nav h2{color: blue;}    
+.list {display:flex;
+       gap:20px;}
+      
+.list a{color: white;
+        text-decoration:none;}
+        
+
+.intro {background:url("bg.png" );
+        background-position: center;
+        background-size: cover;
+        min-height:200px;
+        padding: 28px 0 30px 8px;
+        display:fle;}
+        
+.intro h1{font-size: 48px;}
+        
+ .intro h3{font-size: 28px;
+          color: #0f172a;}   
+             
+ button  {border-radius: 25px;
+          padding:5px;
+          color: blue;
+          margin: 0 0 0 30px;
+          width: 25%;}
+              
+.h1    {text-align:center;
+        padding-top: 8px;
+         background: #E3EEF3;
+         color: blue;}
+
+#chini  {background: #E3EEF3;}
+       
+
+.box    {background: white;
+         border: 2px solid #add;
+         border-radius: 12px;
+         padding: 20px;
+         margin: 20px;
+         box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+         
+ #chini {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;}
+
+.box   {
+        flex: 1 1 20px;}
+
+
+/* kwa simu */
+@media (max-width: 768px) {
+  #chini {
+    flex-direction: column;
+  }
+
+}

@@ -70,3 +70,31 @@ nav h2{color: blue;}
   }
 
 }
+/* Kurekebisha mwonekano kwenye simu na vioo vyote */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .container, .services {
+        width: 100%;
+    }
+}

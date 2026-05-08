@@ -94,7 +94,7 @@ img {
     h1 {
         font-size: 1.8rem;
     }
-    .container, .services {
+    .intro, {
         width: 100%;
     }
 }

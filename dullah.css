@@ -1,159 +1,72 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+*    {padding: 0;
+      margin: 0;}
+       
+nav span{font-size:40px;
+           color: ;}
+           
+nav  {display:flex;
+       justify-content:space-between;
+       align-items: center;
+       padding: 20px 15px;
+       background: #0f172a;
+       color: white;
+       position:sticky;
+       top:0;}
+       
+nav h2{color: blue;}    
+.list {display:flex;
+       gap:20px;}
+      
+.list a{color: white;
+        text-decoration:none;}
+        
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-}
+.intro {background:url("bg.png" );
+        background-position: center;
+        background-size: cover;
+        min-height:200px;
+        padding: 28px 0 30px 8px;
+        display:fle;x}
+        
+.intro h1{font-size: 48px;}
+        
+ .intro h3{font-size: 28px;
+          color: #0f172a;}   
+             
+ button  {border-radius: 25px;
+          padding:5px;
+          color: blue;
+          margin: 0 0 0 30px;
+          width: 25%;}
+              
+.h1    {text-align:center;
+        padding-top: 8px;
+         background: #E3EEF3;
+         color: blue;}
 
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 15px;
-    background: #0f172a;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+#chini  {background: #E3EEF3;}
+       
 
-nav h2 {
-    color: #3b82f6;
-    font-size: 28px;
-}
+.box    {background: white;
+         border: 2px solid #add;
+         border-radius: 12px;
+         padding: 20px;
+         margin: 20px;
+         box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+         
+ #chini {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;}
 
-nav span {
-    font-size: 40px;
-    color: #3b82f6;
-}
+.box   {
+        flex: 1 1 20px;}
 
-.list {
-    display: flex;
-    gap: 25px;
-}
 
-.list a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.list a:hover {
-    color: #3b82f6;
-}
-
-/* Intro Section */
-.intro {
-    background: url("bg.png") center/cover no-repeat;
-    min-height: 80vh;
-    padding: 80px 20px 50px;
-    display: flex;
-    align-items: center;
-    color: white;
-    position: relative;
-}
-
-.intro::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(15, 23, 42, 0.65);
-}
-
-.intro-content {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-}
-
-.intro h1 {
-    font-size: 48px;
-    line-height: 1.1;
-    margin-bottom: 15px;
-}
-
-.intro h3 {
-    font-size: 28px;
-    color: #e0f2fe;
-    margin-bottom: 25px;
-}
-
-button {
-    border-radius: 25px;
-    padding: 12px 30px;
-    background: white;
-    color: #1e40af;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: auto;
-    min-width: 180px;
-}
-
-button:hover {
-    background: #3b82f6;
-    color: white;
-}
-
-/* Services Section */
-.h1 {
-    text-align: center;
-    padding: 40px 20px 20px;
-    background: #E3EEF3;
-    color: #1e40af;
-    font-size: 32px;
-}
-
-#chini {
-    background: #E3EEF3;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.box {
-    background: white;
-    border: 2px solid #bae6fd;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    flex: 1 1 320px;
-    max-width: 400px;
-}
-
-/* Responsive */
+/* kwa simu */
 @media (max-width: 768px) {
-    .intro {
-        min-height: 70vh;
-        padding: 60px 15px;
-    }
-    
-    .intro h1 {
-        font-size: 36px;
-    }
-    
-    .intro h3 {
-        font-size: 22px;
-    }
-    
-    nav {
-        padding: 15px 10px;
-    }
-    
-    .list {
-        gap: 15px;
-        font-size: 15px;
-    }
+  #chini {
+    flex-direction: column;
+  }
+
 }
